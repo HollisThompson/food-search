@@ -17,8 +17,8 @@
   .recipes{
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-around;
+    
     .dish{
       margin: 20px;
       background-color: white;
@@ -33,7 +33,7 @@
   }
 
   .Header{
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .search-button{

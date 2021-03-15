@@ -37,12 +37,15 @@ function App(){
 
   return (
     <div className="App">
+      
+      <h2 className = "Header">Results for {query}</h2>
+      
       <SearchForm
       updateQuery = {updateQuery}
       search = {search}
       updateSearch = {updateSearch}/>
 
-      <h2 className = "Header">Results for {query}</h2>
+      
 
       <div className="recipes">
         {recipes.map(recipe => (
