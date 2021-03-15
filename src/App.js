@@ -42,9 +42,13 @@ function App(){
       search = {search}
       updateSearch = {updateSearch}/>
 
-      {recipes.map(recipe => (
-        <Recipe recipe={recipe.recipe} key={recipe.recipe.label}/>
-      ))}
+      <h2 className = "Header">Results for {query}</h2>
+
+      <div className="recipes">
+        {recipes.map(recipe => (
+          <Recipe recipe={recipe.recipe} key={recipe.recipe.label}/>
+        ))}
+      </div>
     </div>
   );
 }

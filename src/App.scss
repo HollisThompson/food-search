@@ -1,4 +1,55 @@
 .App {
   text-align: center;
+  .search-form{
+    margin: 20px;
+    padding: 20px;
+    .search-bar{
+      width: 40vw;
+      border: 0;
+      height: 20px;
+      &:focus{
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  .recipes{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    .dish{
+      margin: 20px;
+      background-color: white;
+      width:30vw;
+      border-radius: 20px;
+      img{
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .Header{
+    font-size: 50px;
+  }
+
+  .search-button{
+    border: 0;
+    height: 23px;
+    color:rgb(241, 241, 241);
+    background-color: rgb(212, 93, 119);
+    outline: none;
+    &:hover{
+      background-color: rgb(228, 109, 134);
+    }
+    &:active{
+      outline: none;
+      height: 22px;
+      width: auto;
+    }
+  }
 }
 
